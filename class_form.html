@@ -4,10 +4,35 @@
 <form action="class.php" method="post">
 Class Name (prefix and session number): 
 <input type="text" name="classname" id = "classname"><br>
-Start Time: 
+Start Date (YYYY-MM-dd):
+<input type="text" name="startdate" id="startdate"><br>
+End Date (YYYY-MM-dd):
+<input type="text" name="enddate" id="enddate"><br>
+Start Time (hh:mm): 
 <input type="text" name="start" id = "start"><br>
-End Time: 
+End Time (hh:mm): 
 <input type="text" name="end" id="end"><br>
+Days Meeting:<br>
+<div>
+    <input type="checkbox" id="Monday" name="Monday" value="yes">
+    <label for="Monday">Monday</label>
+</div>
+<div>
+    <input type="checkbox" id="Tuesday" name="Tuesday" value="yes">
+    <label for="Tuesday">Tuesday</label>
+</div>
+<div>
+    <input type="checkbox" id="Wednesday" name="Wednesday" value="yes">
+    <label for="Wednesday">Wednesday</label>
+</div>
+<div>
+    <input type="checkbox" id="Thursday" name="Thursday" value="yes">
+    <label for="Thursday">Thursday</label>
+</div>
+<div>
+    <input type="checkbox" id="Friday" name="Friday" value="yes">
+    <label for="Friday">Friday</label>
+</div>
 Number of Units:
 <input type="text" name="units" id="units"><br>
 <input type="submit">
