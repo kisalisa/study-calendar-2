@@ -21,7 +21,6 @@ db = firebase.database()
 
 @app.route("/", methods=['GET', 'POST'])
 
-
 @app.route("/index.html")
 def index():
     return render_template('index.html')
