@@ -21,23 +21,6 @@ db = firebase.database()
 
 @app.route("/", methods=['GET', 'POST'])
 
-# @app.route("/login", methods=['GET', 'POST'])
-# def login():
-#     if(request.method == 'POST'):
-#         email = request.form['email']
-#         username = request.form['username']
-#         password = request.form['password']
-#         try:
-#             auth.sign_in_with_email_and_password(email, password)
-#             return render_template('user.html')
-#         except:
-#             auth.create_user_with_email_and_password(email, password)
-#             db.child("users").push({"name" : username})
-#             return render_template("validprofile.html")
-#     return render_template("login.html")
-# @app.route("/validprofile")
-# def validprof():
-#     return render_template('validprofile.html')
 
 @app.route("/index.html")
 def index():
